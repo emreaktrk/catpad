@@ -1,0 +1,38 @@
+name: catpad
+description: "Cat pad playing sounds of meow midi"
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  get: ^5.0.0-release-candidate-9.3.2
+  google_fonts: ^6.1.0
+  flutter_midi_pro: ^3.1.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+  icons_launcher: ^3.0.3
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+
+icons_launcher:
+  image_path: 'assets/ic_logo_radius.png'
+  platforms:
+    android:
+      enable: true
+    ios:
+      enable: false
